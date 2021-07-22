@@ -17,7 +17,7 @@ run_analysis <- function() {
     merged_data_set <- merge_data_sets()
     # step 2: extract means and standard deviations
     means_stds <- extract_data(merged_data_set)
-    # step 3: add activity and variable names and group by activity and subject
+    # step 3: label activity and variables
     tidy_mean_stds <- means_stds %>% replace_activity_names %>% 
         rename_variables %>% group_by(Activity, Subject)
     # step 4: create separate summary data set
@@ -47,13 +47,13 @@ merge_data_set <- function(x) {
 }
 
 extract_data <- function(merged_data_set) {
-    # identify mean and standard deviation columns in features file
+    # identify mean and standard deviation rows in features file
     features <<- read.table("UCI HAR Dataset/features.txt")
-    means_stds_cols <<- sort(c(grep("\\bmean()\\b", features[[2]]), 
+    means_stds_rows <<- sort(c(grep("\\bmean()\\b", features[[2]]), 
                         grep("\\bstd()\\b", features[[2]])))
-    # select variables from data set matching with identified columns
+    # select variables from data set matching with identified rows
     means_stds <- merged_data_set %>% 
-                    select(Subject, Activity, means_stds_cols + 2)
+                    select(Subject, Activity, means_stds_rows + 2)
 }
 
 replace_activity_names <- function(means_stds) {
@@ -69,7 +69,7 @@ replace_activity_names <- function(means_stds) {
 
 rename_variables <- function(means_stds) {
     # extract all means and standard deviation variables
-    means_stds_vars <- features[means_stds_cols,2]
+    means_stds_vars <- features[means_stds_rows,2]
     # for each column of data set, apply identified variable name
     for(i in 1:length(means_stds_vars)){
         means_stds <- means_stds %>% 
