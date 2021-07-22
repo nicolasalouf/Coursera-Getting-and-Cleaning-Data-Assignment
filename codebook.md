@@ -91,6 +91,24 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:\
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-The set of variables that were estimated from these signals are:
-mean(): Mean value 
-std(): Standard deviation
+The set of variables that were estimated from these signals are: mean(): Mean value std(): Standard deviation
+
+## Step-by-step Treatment of the Data
+
+The below describes the procedures undertaken by the run_analysis script to treat the data
+
+### Step 1: Merge data sets
+
+The script first reads data from test and train files and store them in temporary variables. It then merges the activity labels and the smartphone data to the subject column to form the merged train data set and merged test data set. The script then performs a union join of both train and test data sets.
+
+### Step 2: Extract means and standard deviations
+
+Using the features.txt file, the program identifies the rows which include the exact matches to "mean()" and "std()", representing the means and standard deviations of the measurements in the data. It then selects the columns of the merged data set that correspond to the identified rows, thus extracting the required data from the larger set.
+
+### Step 3: Label activity and variables
+
+The script reads the activity_labels.txt file and identifies activity labels accordingly. It then proceeds to rename the data in the Activity column of the extracted data set based on its findings. Similarly, the program renames the variables of the extracted data set based on the previously identified variable names from the features.txt files. Finally, the script organizes the data by Activity first and then by Subject.
+
+### Step 4: Create separate summary data set
+
+Using dplyr's summarize function, the script creates a tidy summary data set based on the mean of all variables grouped by Activity and by Subject. The summary data set consists of 180 rows (6 activities x 30 subjects) and 68 columns.
