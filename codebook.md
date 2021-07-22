@@ -7,7 +7,7 @@ resulting from the transformations applied to the raw data collected from the
 UCI HAR data set.
 
 Variable                                 | Value Labels
-_________________________________________|_________________________
+________________________________________ | ________________________
 Activity                                 | Walking
                                          | Walking Upstairs
                                          | Walking Downstairs
