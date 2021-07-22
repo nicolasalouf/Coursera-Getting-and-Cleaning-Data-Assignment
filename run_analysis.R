@@ -21,8 +21,8 @@ run_analysis <- function() {
     tidy_mean_stds <- means_stds %>% replace_activity_names %>% 
         rename_variables %>% group_by(Activity, Subject)
     # step 4: create separate summary data set
-    summary <- summarize_all(tidy_mean_stds, mean)
-    View(summary)
+    summary_tidy_set <<- summarize_all(tidy_mean_stds, mean)
+    View(summary_tidy_set)
 }
 
 ###############################################################################
