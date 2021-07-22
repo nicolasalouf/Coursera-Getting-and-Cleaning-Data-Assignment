@@ -6,81 +6,81 @@ The below is the code book describing the variables of the summary data set
 resulting from the transformations applied to the raw data collected from the
 UCI HAR data set.
 
-Variable                                 | Value Labels
----------------------------------------- | ------------------------
-Activity                                 | Walking
-                                         | Walking Upstairs
-                                         | Walking Downstairs
-                                         | Sitting
-                                         | Standing
-                                         | Laying
-Subject                                  | 1 to 30
-tBodyAcc-mean()-X                        | 0 to 1
-tBodyAcc-mean()-Y                        | 0 to 1
-tBodyAcc-mean()-Z                        | 0 to 1
-tBodyAcc-std()-X                         | 0 to 1
-tBodyAcc-std()-Y                         | 0 to 1
-tBodyAcc-std()-Z                         | 0 to 1
-tGravityAcc-mean()-X                     | 0 to 1
-tGravityAcc-mean()-Y                     | 0 to 1
-tGravityAcc-mean()-Z                     | 0 to 1
-tGravityAcc-std()-X                      | 0 to 1
-tGravityAcc-std()-Y                      | 0 to 1
-tGravityAcc-std()-Z                      | 0 to 1
-tBodyAccJerk-mean()-X                    | 0 to 1
-tBodyAccJerk-mean()-Y                    | 0 to 1
-tBodyAccJerk-mean()-Z                    | 0 to 1
-tBodyAccJerk-std()-X                     | 0 to 1
-tBodyAccJerk-std()-Y                     | 0 to 1
-tBodyAccJerk-std()-Z                     | 0 to 1
-tBodyGyro-mean()-X                       | 0 to 1
-tBodyGyro-mean()-Y                       | 0 to 1
-tBodyGyro-mean()-Z                       | 0 to 1
-tBodyGyro-std()-X                        | 0 to 1
-tBodyGyro-std()-Y                        | 0 to 1
-tBodyGyro-std()-Z                        | 0 to 1
-tBodyGyroJerk-mean()-X                   | 0 to 1
-tBodyGyroJerk-mean()-Y                   | 0 to 1
-tBodyGyroJerk-mean()-Z                   | 0 to 1
-tBodyGyroJerk-std()-X                    | 0 to 1
-tBodyGyroJerk-std()-Y                    | 0 to 1
-tBodyGyroJerk-std()-Z                    | 0 to 1
-tBodyAccMag-mean()                       | 0 to 1
-tBodyAccMag-std()                        | 0 to 1
-tGravityAccMag-mean()                    | 0 to 1
-tGravityAccMag-std()                     | 0 to 1
-tBodyAccJerkMag-mean()                   | 0 to 1
-tBodyAccJerkMag-std()                    | 0 to 1
-tBodyGyroMag-mean()                      | 0 to 1
-tBodyGyroMag-std()                       | 0 to 1
-tBodyGyroJerkMag-mean()                  | 0 to 1
-tBodyGyroJerkMag-std()                   | 0 to 1
-fBodyAcc-mean()-X                        | 0 to 1
-fBodyAcc-mean()-Y                        | 0 to 1
-fBodyAcc-mean()-Z                        | 0 to 1
-fBodyAcc-std()-X                         | 0 to 1
-fBodyAcc-std()-Y                         | 0 to 1
-fBodyAcc-std()-Z                         | 0 to 1
-fBodyAccJerk-mean()-X                    | 0 to 1
-fBodyAccJerk-mean()-Y                    | 0 to 1
-fBodyAccJerk-mean()-Z                    | 0 to 1
-fBodyAccJerk-std()-X                     | 0 to 1
-fBodyAccJerk-std()-Y                     | 0 to 1
-fBodyAccJerk-std()-Z                     | 0 to 1
-fBodyGyro-mean()-X                       | 0 to 1
-fBodyGyro-mean()-Y                       | 0 to 1
-fBodyGyro-mean()-Z                       | 0 to 1
-fBodyGyro-std()-X                        | 0 to 1
-fBodyGyro-std()-Y                        | 0 to 1
-fBodyGyro-std()-Z                        | 0 to 1
-fBodyAccMag-mean()                       | 0 to 1
-fBodyAccMag-std()                        | 0 to 1
-fBodyBodyAccJerkMag-mean()               | 0 to 1
-fBodyBodyAccJerkMag-std()                | 0 to 1
-fBodyBodyGyroMag-mean()                  | 0 to 1
-fBodyBodyGyroMag-std()                   | 0 to 1
-fBodyBodyGyroJerkMag-mean()              | 0 to 1
-fBodyBodyGyroJerkMag-std()               | 0 to 1
+| Variable                    | Value Labels       |
+|-----------------------------|--------------------|
+| Activity                    | Walking            |
+|                             | Walking Downstairs |
+|                             | Walking Upstairs   |
+|                             | Standing           |
+|                             | Sitting            |
+|                             | Laying             |
+| Subject                     | 1 to 30            |
+| tBodyAcc-mean()-X           | 0 to 1             |
+| tBodyAcc-mean()-Y           | 0 to 1             |
+| tBodyAcc-mean()-Z           | 0 to 1             |
+| tBodyAcc-std()-X            | 0 to 1             |
+| tBodyAcc-std()-Y            | 0 to 1             |
+| tBodyAcc-std()-Z            | 0 to 1             |
+| tGravityAcc-mean()-X        | 0 to 1             |
+| tGravityAcc-mean()-Y        | 0 to 1             |
+| tGravityAcc-mean()-Z        | 0 to 1             |
+| tGravityAcc-std()-X         | 0 to 1             |
+| tGravityAcc-std()-Y         | 0 to 1             |
+| tGravityAcc-std()-Z         | 0 to 1             |
+| tBodyAccJerk-mean()-X       | 0 to 1             |
+| tBodyAccJerk-mean()-Y       | 0 to 1             |
+| tBodyAccJerk-mean()-Z       | 0 to 1             |
+| tBodyAccJerk-std()-X        | 0 to 1             |
+| tBodyAccJerk-std()-Y        | 0 to 1             |
+| tBodyAccJerk-std()-Z        | 0 to 1             |
+| tBodyGyro-mean()-X          | 0 to 1             |
+| tBodyGyro-mean()-Y          | 0 to 1             |
+| tBodyGyro-mean()-Z          | 0 to 1             |
+| tBodyGyro-std()-X           | 0 to 1             |
+| tBodyGyro-std()-Y           | 0 to 1             |
+| tBodyGyro-std()-Z           | 0 to 1             |
+| tBodyGyroJerk-mean()-X      | 0 to 1             |
+| tBodyGyroJerk-mean()-Y      | 0 to 1             |
+| tBodyGyroJerk-mean()-Z      | 0 to 1             |
+| tBodyGyroJerk-std()-X       | 0 to 1             |
+| tBodyGyroJerk-std()-Y       | 0 to 1             |
+| tBodyGyroJerk-std()-Z       | 0 to 1             |
+| tBodyAccMag-mean()          | 0 to 1             |
+| tBodyAccMag-std()           | 0 to 1             |
+| tGravityAccMag-mean()       | 0 to 1             |
+| tGravityAccMag-std()        | 0 to 1             |
+| tBodyAccJerkMag-mean()      | 0 to 1             |
+| tBodyAccJerkMag-std()       | 0 to 1             |
+| tBodyGyroMag-mean()         | 0 to 1             |
+| tBodyGyroMag-std()          | 0 to 1             |
+| tBodyGyroJerkMag-mean()     | 0 to 1             |
+| tBodyGyroJerkMag-std()      | 0 to 1             |
+| fBodyAcc-mean()-X           | 0 to 1             |
+| fBodyAcc-mean()-Y           | 0 to 1             |
+| fBodyAcc-mean()-Z           | 0 to 1             |
+| fBodyAcc-std()-X            | 0 to 1             |
+| fBodyAcc-std()-Y            | 0 to 1             |
+| fBodyAcc-std()-Z            | 0 to 1             |
+| fBodyAccJerk-mean()-X       | 0 to 1             |
+| fBodyAccJerk-mean()-Y       | 0 to 1             |
+| fBodyAccJerk-mean()-Z       | 0 to 1             |
+| fBodyAccJerk-std()-X        | 0 to 1             |
+| fBodyAccJerk-std()-Y        | 0 to 1             |
+| fBodyAccJerk-std()-Z        | 0 to 1             |
+| fBodyGyro-mean()-X          | 0 to 1             |
+| fBodyGyro-mean()-Y          | 0 to 1             |
+| fBodyGyro-mean()-Z          | 0 to 1             |
+| fBodyGyro-std()-X           | 0 to 1             |
+| fBodyGyro-std()-Y           | 0 to 1             |
+| fBodyGyro-std()-Z           | 0 to 1             |
+| fBodyAccMag-mean()          | 0 to 1             |
+| fBodyAccMag-std()           | 0 to 1             |
+| fBodyBodyAccJerkMag-mean()  | 0 to 1             |
+| fBodyBodyAccJerkMag-std()   | 0 to 1             |
+| fBodyBodyGyroMag-mean()     | 0 to 1             |
+| fBodyBodyGyroMag-std()      | 0 to 1             |
+| fBodyBodyGyroJerkMag-mean() | 0 to 1             |
+| fBodyBodyGyroJerkMag-std()  | 0 to 1             |
 
 
 ## Description From Original Code Book
